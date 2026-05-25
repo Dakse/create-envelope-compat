@@ -2,6 +2,8 @@
 
 This simple mod provides compatibility between Create and Envelope package systems.
 
+Currenly the only supported platform is Neoforge.
+
 ## Contents
 
 ### Postage stamp
