@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "A",
+    "P",
+    "H"
+  ],
+  "key": {
+    "A": {
+      "item": "envelope:address_tag"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "H": {
+      "item": "minecraft:honeycomb"
+    }
+  },
+  "result": {
+    "id": "envelope_create_compat:postage_stamp",
+    "count": 1
+  }
+}

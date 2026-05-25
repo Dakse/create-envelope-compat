@@ -1,0 +1,17 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "tag": "envelope:packages"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "envelope:paper_box"
+    },
+    {
+      "id": "envelope:address_tag"
+    }
+  ]
+}

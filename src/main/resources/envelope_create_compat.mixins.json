@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "io.github.rober.envelopecreatecompat.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BeltDeployerCallbacksMixin",
+    "SawBlockEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

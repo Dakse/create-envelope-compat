@@ -1,0 +1,43 @@
+plugins {
+    id "java"
+    id "net.neoforged.moddev" version "2.0.141"
+}
+
+group = "io.github.rober"
+version = "0.1.0"
+
+base {
+    archivesName = "envelope-create-compat"
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = "21.1.219"
+
+    parchment {
+        minecraftVersion = "1.21.1"
+        mappingsVersion = "2024.11.17"
+    }
+
+    mods {
+        envelope_create_compat {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+repositories {
+    maven { url = "https://maven.createmod.net" }
+    maven { url = "https://www.cursemaven.com" }
+}
+
+dependencies {
+    implementation("com.simibubi.create:create-1.21.1:6.0.10-223")
+    implementation("net.createmod.ponder:ponder-neoforge:1.0.82+mc1.21.1")
+    implementation("curse.maven:envelope-1281170:7936829")
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+}

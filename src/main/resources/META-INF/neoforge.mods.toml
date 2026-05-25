@@ -1,0 +1,41 @@
+modLoader = "javafml"
+loaderVersion = "[0,)"
+license = "MIT"
+
+[[mods]]
+modId = "envelope_create_compat"
+version = "0.1.0"
+displayName = "Envelope Create Compat"
+authors = "rober"
+description = '''Compatibility addon for Create and Envelope.'''
+
+[[mixins]]
+config = "envelope_create_compat.mixins.json"
+
+[[dependencies.envelope_create_compat]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.219,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.envelope_create_compat]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.envelope_create_compat]]
+modId = "create"
+type = "required"
+versionRange = "[6.0.10,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.envelope_create_compat]]
+modId = "envelope"
+type = "required"
+versionRange = "[0.6.0,)"
+ordering = "AFTER"
+side = "BOTH"

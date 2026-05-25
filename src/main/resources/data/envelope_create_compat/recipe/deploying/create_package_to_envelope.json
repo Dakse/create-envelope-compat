@@ -1,0 +1,16 @@
+{
+  "type": "envelope_create_compat:create_package_to_envelope",
+  "ingredients": [
+    {
+      "tag": "create:packages"
+    },
+    {
+      "item": "envelope_create_compat:postage_stamp"
+    }
+  ],
+  "results": [
+    {
+      "id": "envelope:package"
+    }
+  ]
+}
